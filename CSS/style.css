@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+  background: #262334;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#main-heading{
+    font-size: 60px;
+}
+
+#add-btn{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
+
+#update-btn{
+  padding: 0.4rem 1rem;
+  background: #4891d5dc;
+  border: none;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+
+#delete-btn{
+  padding: 0.4rem 1rem;
+  background: #e13939dc;
+  border: none;
+  margin: 9px 5px;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+/* Code For Update Model  */
+
