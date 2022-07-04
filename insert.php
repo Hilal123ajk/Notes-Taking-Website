@@ -30,12 +30,12 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/insert.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- This is a Main Container  -->
     <div class="container">
         <div class="row">
             <div class="col text-center my-4">
-                <h1 id="main-heading">Save Your Notes In Cloud</h1>
+                <h1 class="text-white" id="main-heading">Save Your Notes In Cloud</h1>
             </div>
         </div>
         <!-- Heading Ends Here  -->

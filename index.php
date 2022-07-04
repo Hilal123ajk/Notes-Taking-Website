@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body class="bg-dark">
 
 
 
@@ -85,9 +85,9 @@
                         <!-- Card Here   -->
                         <div class='card w-100 p-3 my-5'> 
                             <div class='card-body'>
-                                <h3 class='card-title' >{$row['title']}</h3>
+                                <h3 class='card-title' id='title' >{$row['title']}</h3>
                                 <hr>
-                                <p class='card-text'>{$row['description']}.</p>
+                                <p class='card-text' id='description'>{$row['description']}.</p>
                                 <button id='update-btn' data-desc='{$row['description']}' data-title='{$row['title']}' data-bs-toggle='modal' data-bs-target='#exampleModal'>Update Note</button>
                                 <button id='delete-btn' data-title='{$row['title']}'>Delete</button> 
 
@@ -145,6 +145,9 @@
                     $("#save-changes").on("click",function(){
                         var newTitle = $("#model-title").val();
                         var newDesc = $("#model-description").val();
+
+                        document.getElementById("title").innerText = newTitle;
+                        document.getElementById("description").innerText = newDesc;
                         
                         $.ajax({
                             url: "update.php",
